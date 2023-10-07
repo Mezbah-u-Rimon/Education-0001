@@ -30,9 +30,9 @@ const Banner = () => {
 
                             <div style={{ backgroundColor: "rgba(0,0,0,0.5)" }} className='w-full h-full flex flex-col gap-5 justify-center'>
 
-                                <div className='px-[130px]'>
+                                <div className='px-10 md:px-20 lg:px-[130px]'>
                                     <small className='text-xl font-bold'>The Impact of Technology on 21st Century</small>
-                                    <h1 className='text-7xl font-bold text-white pt-3 pb-7'>
+                                    <h1 className='text-4xl md:text-7xl font-bold text-white pt-3 pb-7'>
                                         Education
                                     </h1>
                                     <button className='btn bg-[#ffb303] hover:bg-[#fab411c6]'> Bay the Courses Now</button>
@@ -48,9 +48,9 @@ const Banner = () => {
 
                             <div style={{ backgroundColor: "rgba(0,0,0,0.3)" }} className='w-full h-full flex flex-col gap-5 justify-center'>
 
-                                <div className='px-[130px]'>
+                                <div className='px-10 md:px-20 lg:px-[130px]'>
                                     <small className='text-xl font-bold'> Strategies for Effective Teaching and Student </small>
-                                    <h1 data-aos="fade-left" className='text-7xl font-bold text-white pt-3 pb-7'>
+                                    <h1 data-aos="fade-left" className='text-4xl md:text-7xl font-bold text-white pt-3 pb-7'>
                                         Engagement
                                     </h1>
                                     <button className='btn bg-[#ffb303] hover:bg-[#fab411c6]'> Bay the Courses Now</button>
@@ -65,9 +65,9 @@ const Banner = () => {
 
                             <div style={{ backgroundColor: "rgba(0,0,0,0.5)" }} className='w-full h-full flex flex-col gap-5 justify-center'>
 
-                                <div className='px-[130px]'>
+                                <div className='px-10 md:px-20 lg:px-[130px]'>
                                     <small className='text-xl font-bold'> Lifelong Learning and Skill </small>
-                                    <h1 data-aos="fade-left" className='text-7xl font-bold text-white pt-3 pb-7'>
+                                    <h1 data-aos="fade-left" className='text-4xl md:text-7xl font-bold text-white pt-3 pb-7'>
                                         Development
                                     </h1>
                                     <button className='btn bg-[#ffb303] hover:bg-[#fab411c6]'> Bay the Courses Now</button>
@@ -83,9 +83,9 @@ const Banner = () => {
 
                             <div style={{ backgroundColor: "rgba(0,0,0,0.5)" }} className='w-full h-full flex flex-col gap-5 justify-center'>
 
-                                <div className='px-[130px]'>
+                                <div className='px-10 md:px-20 lg:px-[130px]'>
                                     <small className='text-xl font-bold'> Preparing Students for Changing </small>
-                                    <h1 data-aos="fade-left" className='text-7xl font-bold text-white pt-3 pb-7'>
+                                    <h1 data-aos="fade-left" className='text-4xl md:text-7xl font-bold text-white pt-3 pb-7'>
                                         Careers
                                     </h1>
                                     <button className='btn bg-[#ffb303] hover:bg-[#fab411c6]'> Bay the Courses Now</button>
@@ -96,8 +96,6 @@ const Banner = () => {
 
                 </Swiper>
             </div>
-
-
         </div>
     );
 };
