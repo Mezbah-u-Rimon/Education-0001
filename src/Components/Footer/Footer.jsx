@@ -39,6 +39,12 @@ const Footer = () => {
                         <a className="link link-hover">Cookie policy</a>
                     </nav>
                 </footer>
+
+                <hr />
+                <div className='text-center py-5'>
+                    <small className='text-gray-400'> Copy! All right resolve by Mezbah uddin Rimon </small>
+                </div>
+
             </div>
         </div>
     );
