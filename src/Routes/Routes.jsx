@@ -36,7 +36,6 @@ const router = createBrowserRouter([
             {
                 path: "/contact",
                 element: <div> Hi my name is Mezbah </div>,
-                loader: () => fetch('/events.json'),
             },
             {
                 path: "/login",

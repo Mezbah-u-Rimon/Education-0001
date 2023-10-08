@@ -1,15 +1,30 @@
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 
 const Navbar = () => {
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut()
+    }
+
+
     const navbar = <>
         <li> <NavLink to="/"> Home </NavLink></li>
-        <li> <NavLink to="/courses"> Courses </NavLink></li>
-        <li> <NavLink to="/events"> Events </NavLink></li>
-        <li> <NavLink to="/contact"> Contact </NavLink></li>
+        {
+            user?.email && <>
+                <li> <NavLink to="/courses"> Courses </NavLink></li>
+                <li> <NavLink to="/events"> Events </NavLink></li>
+            </>
+        }
         <li> <NavLink to="/login"> Login </NavLink></li>
         <li> <NavLink to="/Register"> Register </NavLink></li>
+        <li> <NavLink to="/contact"> Contact </NavLink></li>
     </>
+
+
     return (
         <div className="navbar max-w-6xl mx-auto">
             <div className="navbar-start">
@@ -31,10 +46,35 @@ const Navbar = () => {
                     {navbar}
                 </ul>
             </div>
+
             <div className="navbar-end">
-                <a className="btn">Button</a>
+
+                {
+                    user?.email ? <div className="dropdown dropdown-end flex items-center">
+                        <button onClick={handleLogOut} className="btn btn-sm  btn-ghost">Logout</button>
+                        <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                            <div className="w-10 rounded-full">
+                                <img src={user.photoURL} alt={user.displayName} />
+                            </div>
+                        </label>
+                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li>
+                                <button className="btn btn-sm  btn-ghost">{user.displayName}</button>
+
+                            </li>
+                            <li>
+                                <button onClick={handleLogOut} className="btn btn-sm  btn-ghost">Logout</button>
+
+                            </li>
+                        </ul>
+                    </div>
+                        :
+                        <Link to='/login'>
+                            <button className="btn btn-sm  btn-ghost">Login</button>
+                        </Link>
+                }
             </div>
-        </div>
+        </div >
     );
 };
 

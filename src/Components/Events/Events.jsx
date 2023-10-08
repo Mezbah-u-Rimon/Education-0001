@@ -1,10 +1,12 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Event from "./Event";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 
 const Events = () => {
     const [events, setEvents] = useState([]);
+    const { user } = useContext(AuthContext);
 
     useEffect(() => {
         fetch('/events.json')
@@ -21,7 +23,11 @@ const Events = () => {
                     <p className="text-gray-400"> Upcoming Education Events to feed your brain. </p>
                 </div>
                 <div>
-                    <button className="btn text-amber-500 bg-white border shadow hover:bg-white hover:border-amber-500"><Link to='/events'> View All Events</Link> </button>
+                    {
+                        user?.email ? <button className="btn text-amber-500 bg-white border shadow hover:bg-white hover:border-amber-500"><Link to='/events'> View All Events</Link> </button>
+                            : <button
+                                className="btn text-amber-500 bg-white border shadow hover:bg-white hover:border-amber-500"><Link to='/login'> View All Events</Link> </button>
+                    }
                 </div>
             </div>
             <div>

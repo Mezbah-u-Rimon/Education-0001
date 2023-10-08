@@ -1,29 +1,34 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
+import toast from 'react-hot-toast';
 
 
 const Login = () => {
     const location = useLocation();
     const navigate = useNavigate();
-
     const { signIn } = useContext(AuthContext);
+
 
     const handleLogin = e => {
         e.preventDefault();
         const form = new FormData(e.currentTarget);
         const email = form.get('email');
         const password = form.get('password');
-        console.log(email, password);
 
+
+        if (password.length < 6) {
+            return toast.error("Password must be at least 6 characters");
+
+        }
 
         signIn(email, password)
-            .then(res => {
-                console.log(res.user);
+            .then(() => {
+                toast.success("user sign in successfully");
                 navigate(location?.state ? location.state : "/")
             })
             .catch(err => {
-                console.log(err)
+                toast.error(err.message)
             })
     }
 
