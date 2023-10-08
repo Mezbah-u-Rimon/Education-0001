@@ -15,7 +15,7 @@ const Footer = () => {
                         <div className='space-y-2'>
                             <p className='flex items-center gap-3 text-base'><BsTelephone className='text-amber-500 text-xl'></BsTelephone> 012 345 6789 </p>
                             <p className='flex items-center gap-3 text-base'><CiLocationOn className='text-amber-500 text-xl'></CiLocationOn> Street San Francisco Bangladesh </p>
-                            <p className='flex items-center gap-3 text-base'><GoMail className='text-amber-500 text-xl'></GoMail> Street San Francisco Bangladesh </p>
+                            <p className='flex items-center gap-3 text-base'><GoMail className='text-amber-500 text-xl'></GoMail> email@gmail.com </p>
                         </div>
                     </div>
                     <nav>

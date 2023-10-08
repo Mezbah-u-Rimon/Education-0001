@@ -9,14 +9,12 @@ const Details = () => {
     const services = useLoaderData();
     const [service, setService] = useState({});
 
-
     useEffect(() => {
         const findServices = services?.find(service => service.id === parseFloat(id));
         setService(findServices);
 
     }, [id, services]);
 
-    console.log(service);
 
     return (
         <div className="max-w-6xl mx-auto">

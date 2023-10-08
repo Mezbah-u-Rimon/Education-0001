@@ -4,6 +4,7 @@ import {
 import MainLayout from "../MainLayout/MainLayout";
 import Home from "../Pages/Home/Home";
 import Details from "../Components/Services/Details";
+import EventsPage from "../Pages/Events/EventsPage";
 
 
 const router = createBrowserRouter([
@@ -19,6 +20,11 @@ const router = createBrowserRouter([
                 path: "/details/:id",
                 element: <Details></Details>,
                 loader: () => fetch('/serviceData.json'),
+            },
+            {
+                path: "/events",
+                element: <EventsPage></EventsPage>,
+                loader: () => fetch('/events.json'),
             },
         ]
     },

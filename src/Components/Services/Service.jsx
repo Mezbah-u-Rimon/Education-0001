@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 const Service = ({ service }) => {
     const { id, title, image, price, description } = service || {};
+
+
     return (
         <div>
             <Card className="shadow p-2 rounded-lg">
@@ -33,8 +35,8 @@ const Service = ({ service }) => {
                             className="text-black bg-amber-500  hover:bg-amber-300 font-bold btn  flex items-center my-5"> Read More... </Link> </p> : <p> {description}</p>}
                     </Typography>
                 </CardBody>
-
             </Card>
+
         </div>
     );
 };

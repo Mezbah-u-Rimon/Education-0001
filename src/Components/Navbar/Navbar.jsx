@@ -5,7 +5,7 @@ const Navbar = () => {
     const navbar = <>
         <li> <NavLink to="/"> Home </NavLink></li>
         <li> <NavLink to="/courses"> Courses </NavLink></li>
-        <li> <NavLink to="/blog"> Blog </NavLink></li>
+        <li> <NavLink to="/events"> Events </NavLink></li>
         <li> <NavLink to="/contact"> Contact </NavLink></li>
         <li> <NavLink to="/login"> Login </NavLink></li>
         <li> <NavLink to="/Register"> Register </NavLink></li>
@@ -22,7 +22,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="flex items-center gap-3">
-                    <img className="w-[100px]" src="https://i.ibb.co/4mypSm6/mortarboard.png" alt="" />
+                    <img className="h-[80px]" src="https://i.ibb.co/4mypSm6/mortarboard.png" alt="" />
                     <h5 className="font-bold text-xl"> Educatee </h5>
                 </div>
             </div>

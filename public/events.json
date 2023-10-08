@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "STEM Workshop",
+        "img": "https://cdn.pixabay.com/photo/2016/09/08/15/21/workshop-1654622_1280.jpg",
+        "time": "10:00 AM - 12:00 PM",
+        "location": "Science Center Auditorium",
+        "date": 23,
+        "month": "November",
+        "details": "Join us for an interactive STEM workshop focused on robotics and programming."
+    },
+    {
+        "id": 2,
+        "title": "Career Fair",
+        "img": "https://cdn.pixabay.com/photo/2014/07/06/09/37/lecture-385357_1280.jpg",
+        "time": "9:30 AM - 4:00 PM",
+        "location": "Convention Center",
+        "date": 7,
+        "month": "December",
+        "details": "Explore job opportunities and connect with top employers at our annual career fair."
+    },
+    {
+        "id": 3,
+        "title": "Education Conference",
+        "img": "https://media.istockphoto.com/id/628483496/photo/business-speaker-giving-a-talk-in-conference-hall.jpg?s=1024x1024&w=is&k=20&c=x2dGniLze0NLw5ODD0rcb7hXruKt3URVJ6-mtZPsQVk=",
+        "time": "8:00 AM - 5:00 PM",
+        "location": "University Hall",
+        "date": 12,
+        "month": "January",
+        "details": "Attend sessions and workshops on the latest trends and innovations in education."
+    },
+    {
+        "id": 4,
+        "title": "Mathematics Olympiad",
+        "img": "https://media.istockphoto.com/id/636332456/photo/online-education-concept.jpg?s=1024x1024&w=is&k=20&c=oV0FuSj-DLfEseSZcvgZGKnhNKa6JZ-axNc4Cpkobyo=",
+        "time": "1:00 PM - 4:00 PM",
+        "location": "Mathematics Department",
+        "date": 14,
+        "month": "November",
+        "details": "Compete in the annual Mathematics Olympiad and test your problem-solving skills."
+    },
+    {
+        "id": 5,
+        "title": "Student Art Exhibition",
+        "img": "https://cdn.pixabay.com/photo/2017/07/15/15/50/fantasy-2506830_1280.jpg",
+        "time": "6:00 PM - 8:00 PM",
+        "location": "Art Gallery",
+        "date": 21,
+        "month": "February",
+        "details": "Enjoy a showcase of student artworks, including paintings, sculptures, and more."
+    },
+    {
+        "id": 6,
+        "title": "Parent-Teacher Meeting",
+        "img": "https://degree.betinstitutions.org/wp-content/uploads/2020/03/c0f457b9-2844-498c-afa6-ed617c77343b.jpg",
+        "time": "3:30 PM - 7:00 PM",
+        "location": "School Gymnasium",
+        "date": 17,
+        "month": "October",
+        "details": "Meet with teachers to discuss your child's progress and academic goals."
+    }
+]
