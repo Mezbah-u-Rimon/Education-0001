@@ -8,13 +8,14 @@ import EventsPage from "../Pages/Events/EventsPage";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout></MainLayout>,
-        errorElement: <div>this is error</div>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: "/",
@@ -27,11 +28,11 @@ const router = createBrowserRouter([
             },
             {
                 path: "/courses",
-                element: <div>My Name is rimon</div>,
+                element: <PrivateRoute><div>My Name is rimon</div></PrivateRoute>
             },
             {
                 path: "/events",
-                element: <EventsPage></EventsPage>,
+                element: <PrivateRoute> <EventsPage /></PrivateRoute>,
                 loader: () => fetch('/events.json'),
             },
             {

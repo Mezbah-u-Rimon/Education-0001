@@ -30,7 +30,7 @@ const Service = ({ service }) => {
                         color="gray"
                         className="font-normal opacity-75"
                     >
-                        {description.length > 100 ? <p>{description.slice(0, 100)} <Link
+                        {description.length > 110 ? <p>{description.slice(0, 110)} <Link
                             to={`/details/${id}`}
                             className="text-black bg-amber-500  hover:bg-amber-300 font-bold btn  flex items-center my-5"> Read More... </Link> </p> : <p> {description}</p>}
                     </Typography>
