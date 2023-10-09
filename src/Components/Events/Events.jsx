@@ -19,8 +19,8 @@ const Events = () => {
         <div className="max-w-6xl mx-auto py-24 px-5">
             <div className="flex flex-wrap md:justify-between items-center mb-12 ">
                 <div className="space-y-2">
-                    <h2 className="text-3xl font-bold"> Our Events </h2>
-                    <p className="text-gray-400"> Upcoming Education Events to feed your brain. </p>
+                    <h2 className="text-3xl font-bold" data-aos="zoom-out-right"> Our Events </h2>
+                    <p className="text-gray-400" data-aos="zoom-out-right"> Upcoming Education Events to feed your brain. </p>
                 </div>
                 <div>
                     {

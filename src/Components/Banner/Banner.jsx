@@ -3,13 +3,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init();
 
 
 
 const Banner = () => {
+
     return (
         <div className='text-white'>
             <div>
@@ -31,11 +29,18 @@ const Banner = () => {
                             <div style={{ backgroundColor: "rgba(0,0,0,0.5)" }} className='w-full h-full flex flex-col gap-5 justify-center'>
 
                                 <div className='px-10 md:px-20 lg:px-[130px]'>
-                                    <small className='text-xl font-bold'>The Impact of Technology on 21st Century</small>
-                                    <h1 className='text-4xl md:text-7xl font-bold text-white pt-3 pb-7'>
+                                    <small className='text-xl font-bold'
+                                        data-aos="fade-up"
+                                        data-aos-anchor-placement="center-bottom">
+                                        The Impact of Technology on 21st Century</small>
+                                    <h1 className='text-4xl md:text-7xl font-bold text-white pt-3 pb-7'
+                                        data-aos="zoom-in-right">
                                         Education
                                     </h1>
-                                    <button className='btn bg-[#ffb303] hover:bg-[#fab411c6]'> Bay the Courses Now</button>
+                                    <button
+                                        data-aos="fade-up"
+                                        data-aos-anchor-placement="top-bottom"
+                                        className='btn bg-[#ffb303] hover:bg-[#fab411c6]'> Bay the Courses Now</button>
                                 </div>
 
                             </div>
@@ -49,11 +54,21 @@ const Banner = () => {
                             <div style={{ backgroundColor: "rgba(0,0,0,0.3)" }} className='w-full h-full flex flex-col gap-5 justify-center'>
 
                                 <div className='px-10 md:px-20 lg:px-[130px]'>
-                                    <small className='text-xl font-bold'> Strategies for Effective Teaching and Student </small>
-                                    <h1 data-aos="fade-left" className='text-4xl md:text-7xl font-bold text-white pt-3 pb-7'>
+                                    <small className='text-xl font-bold'
+                                        data-aos="fade-up"
+                                        data-aos-anchor-placement="center-bottom"
+                                    > Strategies for Effective Teaching and Student </small>
+                                    <h1 data-aos="fade-right"
+                                        data-aos-offset="300"
+                                        data-aos-easing="ease-in-sine"
+                                        className='text-4xl md:text-7xl font-bold text-white pt-3 pb-7'>
                                         Engagement
                                     </h1>
-                                    <button className='btn bg-[#ffb303] hover:bg-[#fab411c6]'> Bay the Courses Now</button>
+                                    <button
+                                        data-aos="fade-up"
+                                        data-aos-anchor-placement="top-bottom"
+                                        className='btn bg-[#ffb303] hover:bg-[#fab411c6]'
+                                    > Bay the Courses Now</button>
                                 </div>
                             </div>
                         </div>
@@ -66,11 +81,17 @@ const Banner = () => {
                             <div style={{ backgroundColor: "rgba(0,0,0,0.5)" }} className='w-full h-full flex flex-col gap-5 justify-center'>
 
                                 <div className='px-10 md:px-20 lg:px-[130px]'>
-                                    <small className='text-xl font-bold'> Lifelong Learning and Skill </small>
-                                    <h1 data-aos="fade-left" className='text-4xl md:text-7xl font-bold text-white pt-3 pb-7'>
+                                    <small className='text-xl font-bold'
+                                        data-aos="fade-up"
+                                        data-aos-anchor-placement="center-bottom"
+                                    > Lifelong Learning and Skill </small>
+                                    <h1 data-aos="zoom-in-right" className='text-4xl md:text-7xl font-bold text-white pt-3 pb-7'>
                                         Development
                                     </h1>
-                                    <button className='btn bg-[#ffb303] hover:bg-[#fab411c6]'> Bay the Courses Now</button>
+                                    <button className='btn bg-[#ffb303] hover:bg-[#fab411c6]'
+                                        data-aos="fade-up"
+                                        data-aos-anchor-placement="top-bottom"
+                                    > Bay the Courses Now</button>
                                 </div>
 
                             </div>
@@ -84,11 +105,17 @@ const Banner = () => {
                             <div style={{ backgroundColor: "rgba(0,0,0,0.5)" }} className='w-full h-full flex flex-col gap-5 justify-center'>
 
                                 <div className='px-10 md:px-20 lg:px-[130px]'>
-                                    <small className='text-xl font-bold'> Preparing Students for Changing </small>
-                                    <h1 data-aos="fade-left" className='text-4xl md:text-7xl font-bold text-white pt-3 pb-7'>
+                                    <small className='text-xl font-bold'
+                                        data-aos="fade-up"
+                                        data-aos-anchor-placement="center-bottom"
+                                    > Preparing Students for Changing </small>
+                                    <h1 data-aos="zoom-in-right" className='text-4xl md:text-7xl font-bold text-white pt-3 pb-7'>
                                         Careers
                                     </h1>
-                                    <button className='btn bg-[#ffb303] hover:bg-[#fab411c6]'> Bay the Courses Now</button>
+                                    <button className='btn bg-[#ffb303] hover:bg-[#fab411c6]'
+                                        data-aos="fade-up"
+                                        data-aos-anchor-placement="top-bottom"
+                                    > Bay the Courses Now</button>
                                 </div>
                             </div>
                         </div>

@@ -3,12 +3,12 @@ import { initializeApp } from "firebase/app";
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBbBWsmeiyNgeSShGCws3K2drxhBhf76jg",
-    authDomain: "education-system-ca423.firebaseapp.com",
-    projectId: "education-system-ca423",
-    storageBucket: "education-system-ca423.appspot.com",
-    messagingSenderId: "337021768737",
-    appId: "1:337021768737:web:bcfb1f298abc75c852ff60"
+    apiKey: import.meta.env.VITE_APIKEY,
+    authDomain: import.meta.env.VITE_AUTHDOMAIN,
+    projectId: import.meta.env.VITE_PROJECTID,
+    storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+    messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+    appId: import.meta.env.VITE_APPID,
 };
 
 const app = initializeApp(firebaseConfig);

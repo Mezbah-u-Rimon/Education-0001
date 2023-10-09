@@ -18,8 +18,10 @@ const Services = () => {
     return (
         <div className="max-w-6xl mx-auto py-24">
             <div className="mb-12 space-y-3">
-                <h1 className="text-3xl font-bold"> Popular Courses </h1>
-                <p> Strategies for Effective Teaching and Student Engagement
+                <h1 className="text-3xl font-bold"
+                    data-aos="zoom-out-right"
+                > Popular Courses </h1>
+                <p data-aos="zoom-out-right"> Strategies for Effective Teaching and Student Engagement
                 </p>
             </div>
 

@@ -42,7 +42,7 @@ const Footer = () => {
 
                 <hr />
                 <div className='text-center py-5'>
-                    <small className='text-gray-400'> Copy! All right resolve by Mezbah uddin Rimon </small>
+                    <small className='text-gray-400'> !Copy All right resolve by Mezbah uddin Rimon </small>
                 </div>
 
             </div>

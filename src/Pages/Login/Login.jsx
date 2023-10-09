@@ -18,10 +18,20 @@ const Login = () => {
         const password = form.get('password');
 
 
-        if (password.length < 6) {
-            return toast.error("Password must be at least 6 characters");
 
+        //password validation
+        if (password.length < 6) {
+            return toast.error('Password not valid. At least 6 characters should be given in password');
         }
+
+        if (!/[A-Z]/.test(password)) {
+            return toast.error('Password not valid. At least 1 capital letter should be given in password');
+        }
+
+        if (!/[!@#$%^&*()_+{};[\]:;<>,.?~\\-]/.test(password)) {
+            return toast.error('Password not valid. At least 1 special character should be given in password');
+        }
+
 
         signIn(email, password)
             .then(() => {

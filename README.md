@@ -34,6 +34,6 @@ The login page works exactly the same way.Here the email and password have to be
 </li>
 </ul>
 
-<h3 className="text-2xl"> link :
-<a href="" target="_blank" rel="donation">The Educatee </a>
+<h3 className="text-5xl"> Live Link :
+<a href=" https://education-system-ca423.web.app" target="_blank" rel="donation">The Educatee </a>
 </h3>

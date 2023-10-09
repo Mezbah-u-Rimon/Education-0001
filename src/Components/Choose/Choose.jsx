@@ -4,10 +4,10 @@ const Choose = () => {
         <div className=" bg-gray-200">
             <div className="max-w-6xl mx-auto py-24 px-5 text-center ">
                 <div className="mb-10">
-                    <h2 className="text-3xl font-bold">
+                    <h2 className="text-3xl font-bold" data-aos="zoom-in-up" >
                         Why Choose Us
                     </h2>
-                    <p className="text-gray-600 mt-4">
+                    <p className="text-gray-600 mt-4" data-aos="zoom-in-up">
                         Choose the plan that best suits your needs.
                     </p>
                 </div>
